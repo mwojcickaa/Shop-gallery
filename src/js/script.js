@@ -12,9 +12,15 @@ fetch('https://dummyjson.com/products?limit=6')
             div.appendChild(image);
             div.appendChild(paragraph)
             document.getElementById("shop-gallery").appendChild(div)
-            console.log(data.products)
-            console.log(data.products[i].images)
         }
+        const button = document.getElementById("button")
+        button.addEventListener("click", function () {
+            const input = document.getElementById("input").value
+            console.log(input)
+            if (input == 1) {
+                console.log("1221")
+            }
+        })
     })
 
 
